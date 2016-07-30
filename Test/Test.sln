@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessBoard", "Test\ChessBoa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{19223975-9D05-4266-9D69-9E79E2D8BA17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserNumber", "UserNumber\UserNumber.csproj", "{20E65A3C-7036-4EEF-82AD-5C159FAF5302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{19223975-9D05-4266-9D69-9E79E2D8BA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19223975-9D05-4266-9D69-9E79E2D8BA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19223975-9D05-4266-9D69-9E79E2D8BA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E65A3C-7036-4EEF-82AD-5C159FAF5302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E65A3C-7036-4EEF-82AD-5C159FAF5302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E65A3C-7036-4EEF-82AD-5C159FAF5302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E65A3C-7036-4EEF-82AD-5C159FAF5302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
