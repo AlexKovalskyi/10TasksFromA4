@@ -11,7 +11,7 @@ namespace Palindrome
 		static void Main(string[] args)
 		{
 			string number = Console.ReadLine();
-			char[] numberArray = number.ToArray<char>();
+			char[] numberArray = number.ToArray();
 			int countMatches = 0;
 			for (int i = 0;i < numberArray.Length/2;i++)
 			{
