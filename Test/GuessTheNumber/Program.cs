@@ -30,7 +30,8 @@ namespace GuessTheNumber
 			while (true)
 			{
                 //TODO: 1-100 ??? random.Next(0, 500); ??
-                Console.WriteLine("Computer generater number in range 1-100, try ty guess it");
+                
+                Console.WriteLine("Computer generater number in range 1-500 try ty guess it");
                 //TODO: woat? 
 				Console.WriteLine("If you woat exit from programm press '0'");
 				number = random.Next(0, 500);
@@ -39,28 +40,28 @@ namespace GuessTheNumber
 				while (i == 0)
 				{
 					Console.WriteLine("Write possible number");
-					int possibleNumber = Convert.ToInt32(Console.ReadLine());
-					if (0 < possibleNumber & possibleNumber < 500)
+					int userNumber = Convert.ToInt32(Console.ReadLine());
+					if (0 < userNumber & userNumber < 500)
 					{
-
-						if (number > possibleNumber)
+                        tryCount++;
+						if (number > userNumber)
 						{
 							Console.WriteLine("You number lowest then computer");
-							tryCount++;
+							
 						}
-						else if (number < possibleNumber)
+						else if (number < userNumber)
 						{
                             //TODO: biggest
 							Console.WriteLine("You number biggestst then computer");
-							tryCount++;
+							
 						}
                         //TODO: May be else should be here? 
-						else if (number == possibleNumber)
+						else if (number == userNumber)
 						{
 							Console.WriteLine("Congratulations. Computer number was {0}, you try {1}-th times", number, tryCount);
 							Console.WriteLine("Press enter to try again");
 							Console.WriteLine("Press '0' to exit from program");
-							tryCount++;
+							
 							i++;
 						}
                         //TODO: What does this statement do in the program? 
@@ -69,8 +70,9 @@ namespace GuessTheNumber
 							Console.WriteLine("Wrong data type");
 						}
 					}
-					else if (possibleNumber == 0)
+					else if (userNumber == 0)
 					{
+                        //TODO: Be careful while usin this statement.
 						Environment.Exit(0);
 					}
 

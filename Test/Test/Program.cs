@@ -32,7 +32,7 @@ namespace ChessBoard
 					{
 						for (int jj = 0;jj < height;jj++)
 						{
-							if (i % 2 == 1)
+							if (i % 2 == 1)// true --> Odd number, otherwise even number.
 							{
                                 //TODO: Use ternary operator here.
 								if (j % 2 == 1)
@@ -49,12 +49,10 @@ namespace ChessBoard
 							}
 							else
 								Console.Write("-");
-
 						}
-
+                        
 					}
-
-					Console.Write("\n");
+					Console.Write("\n"); //Escape sequences
 				}
 			}
 

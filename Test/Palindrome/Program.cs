@@ -12,16 +12,15 @@ namespace Palindrome
 	{
 		static void Main(string[] args)
 		{
-            //TODO: Test the word 'rACEcaR', 'EyE'. Design flaw!
-            string number = Console.ReadLine();
+            //TODO: Test the word 'rACEcaR', 'Eye'. Design flaw!
+            var number = (Console.ReadLine());
 			char[] numberArray = number.ToArray();
-            Array.Reverse(numberArray);
+
 			int countMatches = 0;
 			for (int i = 0;i < numberArray.Length/2;i++)
 			{
 				for (int j = numberArray.Length-1-i;j >=numberArray.Length/2;j--)
 				{
-
 					if (numberArray[i] == numberArray[j])
 					{
 						Console.WriteLine("{0} = {1}", numberArray[i], numberArray[j]);
@@ -29,8 +28,6 @@ namespace Palindrome
 						countMatches++;
 						break;
 					}
-					
-					
 				}
 			}
 
@@ -44,7 +41,7 @@ namespace Palindrome
 			}
 			Console.ReadLine();
 		}
-        //TODO: Implement again in other way with O(n) complicity.
+        //TODO: Implement again in other way with O(n) complicity. Big O
         
         //TODO: Implement again in other way with numeric numbers.
 
