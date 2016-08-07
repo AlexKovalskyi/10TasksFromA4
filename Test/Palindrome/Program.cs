@@ -1,10 +1,5 @@
 ﻿using System;
-//TODO: Remove unused namespaces.
-using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Palindrome
 {
@@ -12,14 +7,37 @@ namespace Palindrome
 	{
 		static void Main(string[] args)
 		{
-            //TODO: Test the word 'rACEcaR', 'Eye'. Design flaw!
-            var number = (Console.ReadLine());
-			char[] numberArray = number.ToArray();
+			PalindromWith2For();
+		}
+        //TODO: Implement again in other way with O(n) complicity. Big O
+        
+        //TODO: Implement again in other way with numeric numbers.
 
-			int countMatches = 0;
-			for (int i = 0;i < numberArray.Length/2;i++)
+        //TODO: Implement again with while statement.
+		private static void PalindromWith1For()
+		{
+			var number = (Console.ReadLine()).ToLower();
+			char[] x = number.ToCharArray();
+			var a = string.Copy(number);
+			char[] arr = a.ToCharArray();
+			Array.Reverse(arr);
+
+			for (int i = 0;i < arr.Length/2;i++)
 			{
-				for (int j = numberArray.Length-1-i;j >=numberArray.Length/2;j--)
+			{
+
+			}
+			}
+		}
+
+		private static void PalindromWith2For()
+		{
+			var number = (Console.ReadLine()).ToLower();
+			char[] numberArray = number.ToArray();
+			int countMatches = 0;
+			for (int i = 0; i<numberArray.Length/2;i++)
+			{
+				for (int j = numberArray.Length - 1 - i; j >=numberArray.Length/2;j--)
 				{
 					if (numberArray[i] == numberArray[j])
 					{
@@ -28,7 +46,7 @@ namespace Palindrome
 						countMatches++;
 						break;
 					}
-				}
+}
 			}
 
 			if (countMatches == numberArray.Length / 2)
@@ -41,11 +59,6 @@ namespace Palindrome
 			}
 			Console.ReadLine();
 		}
-        //TODO: Implement again in other way with O(n) complicity. Big O
-        
-        //TODO: Implement again in other way with numeric numbers.
-
-        //TODO: Implement again with while statement.
 
     }
 }

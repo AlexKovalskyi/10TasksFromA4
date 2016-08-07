@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Reverse
 {
@@ -15,13 +11,11 @@ namespace Reverse
 
 	    public static void KoSolution()
 	    {
-            //TODO: To many tabs \t
-            Console.WriteLine("Введите значение"); //TODO: Where char ':' should be inserted? 
-            string s = Console.ReadLine();
-            char[] str = s.ToCharArray();
-            Array.Reverse(str);
-            //TODO: What was outputed? A bit confused.
-            Console.Write(str);
+            Console.WriteLine("Enter number what must be reversed: "); 
+            string numberForRevers = Console.ReadLine();
+            char[] reversNumber = numberForRevers.ToCharArray();
+            Array.Reverse(reversNumber);
+            Console.Write(reversNumber);
             Console.ReadKey();
         }
 	}

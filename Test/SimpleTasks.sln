@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessBoard", "Test\ChessBoard.csproj", "{1A1E5D49-81EF-463B-AB59-71B33D09B7CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-ChessBoard", "Test\1-ChessBoard.csproj", "{1A1E5D49-81EF-463B-AB59-71B33D09B7CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{19223975-9D05-4266-9D69-9E79E2D8BA17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-GuessTheNumber", "GuessTheNumber\2-GuessTheNumber.csproj", "{19223975-9D05-4266-9D69-9E79E2D8BA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserNumber", "UserNumber\UserNumber.csproj", "{20E65A3C-7036-4EEF-82AD-5C159FAF5302}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-UserNumber", "UserNumber\5-UserNumber.csproj", "{20E65A3C-7036-4EEF-82AD-5C159FAF5302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{4257A0C5-DA49-4117-BC0D-B2436F20949D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-Palindrome", "Palindrome\8-Palindrome.csproj", "{4257A0C5-DA49-4117-BC0D-B2436F20949D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse", "Reverse\Reverse.csproj", "{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-Reverse", "Reverse\6-Reverse.csproj", "{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,52 +10,46 @@ namespace ChessBoard
 			{
 				ShowChessBoard();
 			}
-			catch //TODO: how to debug? 
+			catch (Exception ex)
 			{
-				Console.WriteLine("Wrong DataFormat"); //TODO: What is DataFormat? 
+				Console.WriteLine("Error : please try again. Maybe you are using wrong argments.");
+				Console.WriteLine("Press enter to close program.");
 				Console.ReadLine();
 			}
 		}
 
-			public static void ShowChessBoard()
-			{//TODO: Something with tabs again?
-			Console.WriteLine("Enter  the cell height");
-			int height = Convert.ToInt32(Console.ReadLine()); //TODO: Type this in front of WriteLine (upper operation)
-			Console.WriteLine("Enter the cell width");
-			int width = Convert.ToInt32(Console.ReadLine());
-            //TODO: Too complex. Read about algorithm complexity. Big O.
-            for (int i = 0;i < 7;i++)
+		public static void ShowChessBoard()
+		{
+
+			Console.Write("Enter  the cell height: ");
+			int cellHeight = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Enter the cell width: ");
+			int cellWidth = Convert.ToInt32(Console.ReadLine());
+			//TODO: Too complex. Read about algorithm complexity. Big O.
+			Console.Write("Enter  the board height: ");
+			int boardHeight = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Enter the board width: ");
+			int boardWidth = Convert.ToInt32(Console.ReadLine());
+			for (int i = 0;i < boardHeight;i++)
 			{
-				for (int ii = 0;ii < width;ii++)
+				for (int ii = 0;ii < cellWidth;ii++)
 				{
-					for (int j = 0;j < 7;j++)
+					for (int j = 0;j < boardWidth;j++)
 					{
-						for (int jj = 0;jj < height;jj++)
+						for (int jj = 0;jj < cellHeight;jj++)
 						{
-							if (i % 2 == 1)// true --> Odd number, otherwise even number.
+							if (i % 2 == 1)
 							{
-                                //TODO: Use ternary operator here.
-								if (j % 2 == 1)
-								{
-									Console.Write("-");
-								}
-								else
-									Console.Write("*");
-							}
-                            //TODO: Use ternary operator here.
-                            else if (j % 2 == 1)
-							{
-								Console.Write("*");
+								Console.Write((j % 2 == 1) ? "-" : "*");
 							}
 							else
-								Console.Write("-");
+								Console.Write((j%2==1)? "*":"-");
 						}
-                        
+                       
 					}
-					Console.Write("\n"); //Escape sequences
+					Console.WriteLine();
 				}
 			}
-
 			Console.ReadLine();
 		}
 	}

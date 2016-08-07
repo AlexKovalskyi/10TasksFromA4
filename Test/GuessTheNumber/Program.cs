@@ -1,9 +1,4 @@
 ﻿using System;
-//TODO: Remove unused namespaces.
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GuessTheNumber
 {
@@ -15,10 +10,10 @@ namespace GuessTheNumber
 			{
 				RandomNumberGame();
 			}
-			catch //TODO: I will have no reference to exception if it will occur.
+			catch(Exception ex) 
 			{
-				Console.WriteLine("Wrong format");//TODO: Where is '.' ??
-				Console.WriteLine("Press enter to close program"); //TODO: Where is '.' ??
+				Console.WriteLine("Error : please try again. Maybe you are using wrong argments.");
+				Console.WriteLine("Press enter to close program.");
                 Console.ReadLine();
 			}
 		}
@@ -26,54 +21,45 @@ namespace GuessTheNumber
 		private static void RandomNumberGame()
 		{
 			Random random = new Random();
-			int number;
 			while (true)
 			{
-                //TODO: 1-100 ??? random.Next(0, 500); ??
-                
-                Console.WriteLine("Computer generater number in range 1-500 try ty guess it");
-                //TODO: woat? 
-				Console.WriteLine("If you woat exit from programm press '0'");
-				number = random.Next(0, 500);
+				int startOfrange = 1;
+				int endOfRange = 500;
+				Console.WriteLine("Welcome in game GuessTheNumber.");
+				Console.WriteLine("Computer generater number in range {0} - {1} try ty guess it.",startOfrange,endOfRange);
+				Console.WriteLine("If you want exit from programm press '0'.");
+				int randomNumber = random.Next(startOfrange,endOfRange);
 				int i = 0;
 				int tryCount = 0;
 				while (i == 0)
 				{
-					Console.WriteLine("Write possible number");
+					Console.Write("Try to guess the number. Enter number in range: ");
 					int userNumber = Convert.ToInt32(Console.ReadLine());
-					if (0 < userNumber & userNumber < 500)
+					if (startOfrange < userNumber & userNumber < endOfRange)
 					{
                         tryCount++;
-						if (number > userNumber)
+						if (randomNumber > userNumber)
 						{
 							Console.WriteLine("You number lowest then computer");
 							
 						}
-						else if (number < userNumber)
+						else if (randomNumber < userNumber)
 						{
-                            //TODO: biggest
-							Console.WriteLine("You number biggestst then computer");
+							Console.WriteLine("You number biggest then computer");
 							
 						}
-                        //TODO: May be else should be here? 
-						else if (number == userNumber)
+						else
 						{
-							Console.WriteLine("Congratulations. Computer number was {0}, you try {1}-th times", number, tryCount);
+							Console.WriteLine("Congratulations. Computer number was {0}, you try {1}-th times", randomNumber, tryCount);
 							Console.WriteLine("Press enter to try again");
 							Console.WriteLine("Press '0' to exit from program");
 							
 							i++;
 						}
-                        //TODO: What does this statement do in the program? 
-						else
-						{
-							Console.WriteLine("Wrong data type");
-						}
 					}
 					else if (userNumber == 0)
 					{
-                        //TODO: Be careful while usin this statement.
-						Environment.Exit(0);
+						break;
 					}
 
 					else
