@@ -1,32 +1,43 @@
 ﻿using System;
 using System.Linq;
 
+//TODO: 'UserNumber' name of the project does not meet actual context.
 namespace UserNumber
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Please enter your number");
+			Console.Write("Please enter your number: ");
 			string userNumber = Console.ReadLine();
-			char[] a = userNumber.ToArray();
-			Console.Write("Amount of symbol number: ");
-			Console.Write(a.Length);
+
+            //TODO: There is no need to cast string to chars array. Remove this transformation. And use [string].Length property. Below example.
+            char[] a = userNumber.ToArray();
+            //Removable Example 
+            const string smallString = "S";
+            Console.WriteLine($"{smallString.Length}");
+            //Removable Example
+
+            Console.Write("Amount of symbols number: ");
+			Console.Write($"{a.Length}\n");
+            
+            //TODO: What is the destination of 'y' variable?
 			string[] y = new string[a.Length];
 			int[] z = new int[a.Length];
 			for (int i = 0;i < a.Length;i++)
 			{
-				y[i] = Convert.ToString(a[i]);
+                //TODO: What is the destination of 'y' variable?
+                y[i] = Convert.ToString(a[i]);
 				z[i] = Convert.ToInt32(y[i]);
 			}
-			int value = 0;
+			int summ = 0;
 			for (int i = 0;i < z.Length;i++)
 			{
-				value = value + z[i];
+				summ += z[i];
 			}
-			Console.WriteLine("The sum of numeric: {0}", value);
-			int arithmetic = value / z.Length;
-			Console.WriteLine("Arithmetic mean is {0}", arithmetic);
+			Console.WriteLine("The sum of numeric: {0}", summ);
+			int averageValue = summ / z.Length;
+			Console.WriteLine("Average value is {0}", averageValue);
 			
 			Console.ReadLine();
 		}
