@@ -23,8 +23,10 @@ namespace GuessTheNumber
 			Random random = new Random();
 			while (true)
 			{
+                //TODO: You initialize these variables each itaration of the loop.
 				int startOfrange = 1;
 				int endOfRange = 500;
+
 				Console.WriteLine("Welcome in game GuessTheNumber.");
 				Console.WriteLine("Computer generater number in range {0} - {1} try ty guess it.",startOfrange,endOfRange);
 				Console.WriteLine("If you want exit from programm press '0'.");
