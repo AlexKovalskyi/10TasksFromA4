@@ -43,7 +43,7 @@ namespace ChessBoard
 								Console.Write((j % 2 == 1) ? "-" : "*");
 							}
 							else
-								Console.Write((j%2==1)? "*":"-");
+								Console.Write((j % 2 == 1) ? "*" : "-");
 						}
                        
 					}

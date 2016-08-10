@@ -51,11 +51,11 @@ namespace Palindrome
 
 			if (countMatches == numberArray.Length / 2)
 			{
-				Console.WriteLine("Number is Palindrome");
+				Console.WriteLine("Number is Palindrome.");
 			}
 			else
 			{
-				Console.WriteLine("Number is doesn't palindrome");
+				Console.WriteLine("Number is doesn't palindrome.");
 			}
 			Console.ReadLine();
 		}

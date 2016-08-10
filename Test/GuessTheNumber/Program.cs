@@ -21,12 +21,10 @@ namespace GuessTheNumber
 		private static void RandomNumberGame()
 		{
 			Random random = new Random();
+			int startOfrange = 1;
+			int endOfRange = 500;
 			while (true)
 			{
-                //TODO: You initialize these variables each itaration of the loop.
-				int startOfrange = 1;
-				int endOfRange = 500;
-
 				Console.WriteLine("Welcome in game GuessTheNumber.");
 				Console.WriteLine("Computer generater number in range {0} - {1} try ty guess it.",startOfrange,endOfRange);
 				Console.WriteLine("If you want exit from programm press '0'.");
@@ -42,19 +40,19 @@ namespace GuessTheNumber
                         tryCount++;
 						if (randomNumber > userNumber)
 						{
-							Console.WriteLine("You number lowest then computer");
+							Console.WriteLine("You number lowest then computer.");
 							
 						}
 						else if (randomNumber < userNumber)
 						{
-							Console.WriteLine("You number biggest then computer");
+							Console.WriteLine("You number biggest then computer.");
 							
 						}
 						else
 						{
-							Console.WriteLine("Congratulations. Computer number was {0}, you try {1}-th times", randomNumber, tryCount);
-							Console.WriteLine("Press enter to try again");
-							Console.WriteLine("Press '0' to exit from program");
+							Console.WriteLine("Congratulations. Computer number was {0}, you try {1}-th times.", randomNumber, tryCount);
+							Console.WriteLine("Press enter to try again.");
+							Console.WriteLine("Press '0' to exit from program.");
 							
 							i++;
 						}
@@ -66,7 +64,7 @@ namespace GuessTheNumber
 
 					else
 					{
-						Console.WriteLine("Write number in range 1-500");
+						Console.WriteLine("Write number in range 1-500.");
 					}
 				}
 
