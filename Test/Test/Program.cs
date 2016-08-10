@@ -24,7 +24,6 @@ namespace ChessBoard
 			int cellHeight = Convert.ToInt32(Console.ReadLine());
 			Console.Write("Enter the cell width: ");
 			int cellWidth = Convert.ToInt32(Console.ReadLine());
-			//TODO: Too complex. Read about algorithm complexity. Big O.
 			Console.Write("Enter  the board height: ");
 			int boardHeight = Convert.ToInt32(Console.ReadLine());
 			Console.Write("Enter the board width: ");

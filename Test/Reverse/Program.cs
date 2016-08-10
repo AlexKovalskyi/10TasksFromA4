@@ -18,9 +18,7 @@ namespace Reverse
 			Console.WriteLine("After revers we take {0}", result);
 			Console.ReadLine();
 		}
-		
-        //TODO: Method name should meet its context.
-		public static void KoSolution()
+		public static void ReverseWithCharArray()
 		{
 			Console.WriteLine("Enter number what must be reversed: ");
 			string numberForRevers = Console.ReadLine();

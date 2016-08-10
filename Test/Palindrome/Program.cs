@@ -7,7 +7,8 @@ namespace Palindrome
 	{
 		static void Main(string[] args)
 		{
-			PalindromWith2For();
+			PalindromWith1For();
+		//	PalindromWith2For();
 		}
         //TODO: Implement again in other way with O(n) complicity. Big O
         
@@ -16,18 +17,33 @@ namespace Palindrome
         //TODO: Implement again with while statement.
 		private static void PalindromWith1For()
 		{
-			var number = (Console.ReadLine()).ToLower();
-			char[] x = number.ToCharArray();
-			var a = string.Copy(number);
-			char[] arr = a.ToCharArray();
-			Array.Reverse(arr);
 
-			for (int i = 0;i < arr.Length/2;i++)
-			{
-			{
 
+			int userNumber = Convert.ToInt32(Console.ReadLine());
+
+			int result = 0;
+			while (userNumber != 0)
+			{
+				int remind = 0;
+				userNumber = Math.DivRem(userNumber, 10, out remind);
+				result = result * 10 + remind;
+				
 			}
+			var a = userNumber.ToString().ToArray();
+			var b = result.ToString().ToArray();
+			Console.WriteLine(a.Length);
+			for (int i = 0;i < a.Length / 2;i++)
+			{
+				if (a != b)
+				{
+					Console.WriteLine("Number is doesn't palindrome.");
+				}
+				else
+				{
+					Console.WriteLine("Number is Palindrome.");
+				}
 			}
+			Console.Read();
 		}
 
 		private static void PalindromWith2For()

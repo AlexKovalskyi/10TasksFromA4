@@ -29,8 +29,6 @@ namespace GuessTheNumber
 				Console.WriteLine("Computer generater number in range {0} - {1} try ty guess it.",startOfrange,endOfRange);
 				Console.WriteLine("If you want exit from programm press '0'.");
 				int randomNumber = random.Next(startOfrange,endOfRange);
-
-                //TODO: You can redesign code and exclude variable 'i' at all.
 				int i = 0;
 				int tryCount = 0;
 				while (i == 0)
@@ -55,8 +53,7 @@ namespace GuessTheNumber
 							Console.WriteLine("Congratulations. Computer number was {0}, you try {1}-th times.", randomNumber, tryCount);
 							Console.WriteLine("Press enter to try again.");
 							Console.WriteLine("Press '0' to exit from program.");
-							
-							i++;
+							break;
 						}
 					}
 					else if (userNumber == 0)
