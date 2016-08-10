@@ -19,6 +19,7 @@ namespace ArithmeticMean
 			for (int i = 0;i < userNumber.Length;i++)
 			{
 				summ += z[i];
+                //TODO: What is the destination of this WriteLine() ? 
 				Console.WriteLine(z[i]);
 			}
 			Console.WriteLine("The sum of numeric: {0}.", summ);

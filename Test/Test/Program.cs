@@ -20,7 +20,6 @@ namespace ChessBoard
 
 		public static void ShowChessBoard()
 		{
-
 			Console.Write("Enter  the cell height: ");
 			int cellHeight = Convert.ToInt32(Console.ReadLine());
 			Console.Write("Enter the cell width: ");
