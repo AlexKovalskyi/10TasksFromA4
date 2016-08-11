@@ -8,48 +8,42 @@ namespace Palindrome
 		static void Main(string[] args)
 		{
 			PalindromWith1For();
+			//PalindromWithNueric();
 		//	PalindromWith2For();
+			Console.ReadLine();
 		}
         //TODO: Implement again in other way with O(n) complicity. Big O
-        
-        //TODO: Implement again in other way with numeric numbers.
 
         //TODO: Implement again with while statement.
-		private static void PalindromWith1For()
+		private static void PalindromWithNueric()
 		{
-
-
+			Console.Write("Please enter your number: ");
 			int userNumber = Convert.ToInt32(Console.ReadLine());
-
+			int copyUserNumber = userNumber;
 			int result = 0;
 			while (userNumber != 0)
 			{
 				int remind = 0;
 				userNumber = Math.DivRem(userNumber, 10, out remind);
 				result = result * 10 + remind;
-				
+
 			}
-            //TODO: ToArray is not needed.
-			var a = userNumber.ToString().ToArray();
-			var b = result.ToString().ToArray();
-			Console.WriteLine(a.Length);
-			for (int i = 0;i < a.Length / 2;i++)
+			if(copyUserNumber==result)
 			{
-				if (a != b)
-				{
-                    //TODO: Break at the right moment.
-					Console.WriteLine("Number isn't palindrome.");
-				}
-				else
-				{
-					Console.WriteLine("Number is Palindrome.");
-				}
+				Console.WriteLine("Number is Palindrome.");
 			}
-			Console.Read();
+			else
+			{
+				Console.WriteLine("Number is doesn't palindrome.");
+			}
+			
 		}
+
+
 
 		private static void PalindromWith2For()
 		{
+			Console.Write("Please enter your number: ");
 			var number = (Console.ReadLine()).ToLower();
 			char[] numberArray = number.ToArray();
 			int countMatches = 0;
@@ -73,24 +67,44 @@ namespace Palindrome
 			}
 			else
 			{
-				Console.WriteLine("Number is doesn't palindrome.");
+				Console.WriteLine("Number isn't palindrome.");
 			}
 			Console.ReadLine();
 		}
 
-        // http://bigocheatsheet.com/
-        public static bool isPalindrome(string strToCheck)
-        {
-            for (int i = 0; i < strToCheck.Length / 2 ; i++)
-            {
-                int lastOffset = strToCheck.Length - 1 - i;
-                if(strToCheck[i] != strToCheck[lastOffset])
-                {
-                    return false;
-                }
-            }
 
-            return true;
-        }
-    }
+		static void PalindromWith1For()
+		{
+			Console.Write("Please enter your number: ");
+			string userNumber = Console.ReadLine();
+			
+			for (int i = 0;i < userNumber.Length/2; i++)
+			{
+				if (userNumber[i] != userNumber[userNumber.Length - i - 1])
+				{
+					Console.WriteLine("Number isn't palindrome.");
+					break;
+				}
+				else
+				{
+					Console.WriteLine("Number is Palindrome.");// TODO: must show ones;
+				}
+			}
+			Console.Read();
+		}
+		//// http://bigocheatsheet.com/
+		//public static bool isPalindrome(string strToCheck)
+		//{
+		//    for (int i = 0; i < strToCheck.Length / 2 ; i++)
+		//    {
+		//        int lastOffset = strToCheck.Length - 1 - i;
+		//        if(strToCheck[i] != strToCheck[lastOffset])
+		//        {
+		//            return false;
+		//        }
+		//    }
+
+		//    return true;
+		//}
+	}
 }

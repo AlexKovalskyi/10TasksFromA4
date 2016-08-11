@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-Palindrome", "Palindrome\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-Reverse", "Reverse\6-Reverse.csproj", "{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayShirt", "ArrayShirt\ArrayShirt.csproj", "{F419129A-CD8F-4F09-9301-FA0623BADBA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
