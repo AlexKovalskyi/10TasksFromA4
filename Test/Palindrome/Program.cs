@@ -29,6 +29,7 @@ namespace Palindrome
 				result = result * 10 + remind;
 				
 			}
+            //TODO: ToArray is not needed.
 			var a = userNumber.ToString().ToArray();
 			var b = result.ToString().ToArray();
 			Console.WriteLine(a.Length);
@@ -36,7 +37,8 @@ namespace Palindrome
 			{
 				if (a != b)
 				{
-					Console.WriteLine("Number is doesn't palindrome.");
+                    //TODO: Break at the right moment.
+					Console.WriteLine("Number isn't palindrome.");
 				}
 				else
 				{
@@ -62,7 +64,7 @@ namespace Palindrome
 						countMatches++;
 						break;
 					}
-}
+                }
 			}
 
 			if (countMatches == numberArray.Length / 2)
@@ -76,5 +78,19 @@ namespace Palindrome
 			Console.ReadLine();
 		}
 
+        // http://bigocheatsheet.com/
+        public static bool isPalindrome(string strToCheck)
+        {
+            for (int i = 0; i < strToCheck.Length / 2 ; i++)
+            {
+                int lastOffset = strToCheck.Length - 1 - i;
+                if(strToCheck[i] != strToCheck[lastOffset])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }

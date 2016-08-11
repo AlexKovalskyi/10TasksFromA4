@@ -29,9 +29,8 @@ namespace GuessTheNumber
 				Console.WriteLine("Computer generater number in range {0} - {1} try ty guess it.",startOfrange,endOfRange);
 				Console.WriteLine("If you want exit from programm press '0'.");
 				int randomNumber = random.Next(startOfrange,endOfRange);
-				int i = 0;
 				int tryCount = 0;
-				while (i == 0)
+				while (true)
 				{
 					Console.Write("Try to guess the number. Enter number in range: ");
 					int userNumber = Convert.ToInt32(Console.ReadLine());
@@ -41,12 +40,10 @@ namespace GuessTheNumber
 						if (randomNumber > userNumber)
 						{
 							Console.WriteLine("You number lowest then computer.");
-							
 						}
 						else if (randomNumber < userNumber)
 						{
 							Console.WriteLine("You number biggest then computer.");
-							
 						}
 						else
 						{

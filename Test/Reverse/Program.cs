@@ -6,18 +6,24 @@ namespace Reverse
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Enter number what must be reversed: ");
-			int numberForRevers = Convert.ToInt32(Console.ReadLine());
-			int result = 0;
-			while (numberForRevers != 0)
-			{
-				int remaind;
-				numberForRevers = Math.DivRem(numberForRevers, 10, out remaind);
-				result = result * 10 + remaind;
-			}
-			Console.WriteLine("After revers we take {0}", result);
-			Console.ReadLine();
+			
 		}
+
+        public static void ReverseViaDigitsOperation()
+        {
+            Console.WriteLine("Enter number what will be reversed: ");
+            int numberForRevers = Convert.ToInt32(Console.ReadLine());
+            int result = 0;
+            while (numberForRevers != 0)
+            {
+                int remaind;
+                numberForRevers = Math.DivRem(numberForRevers, 10, out remaind);
+                result = result * 10 + remaind;
+            }
+            Console.WriteLine("After revers we take {0}", result);
+            Console.ReadLine();
+        }
+
 		public static void ReverseWithCharArray()
 		{
 			Console.WriteLine("Enter number what must be reversed: ");
