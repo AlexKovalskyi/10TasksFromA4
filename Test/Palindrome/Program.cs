@@ -74,23 +74,32 @@ namespace Palindrome
 
 
 		static void PalindromWith1For()
+		{	
+			if (CheckPalindrom)
+			{
+				Console.WriteLine("Number is Palindrome.");
+			}
+			else
+			{
+				Console.WriteLine("Number isn't palindrome.");
+			}
+			Console.Read();
+		}
+		static bool CheckPalindrom()
 		{
 			Console.Write("Please enter your number: ");
 			string userNumber = Console.ReadLine();
-			
-			for (int i = 0;i < userNumber.Length/2; i++)
+			bool checkPalindrom = true;
+			for (int i = 0; i<userNumber.Length/2; i++)
 			{
 				if (userNumber[i] != userNumber[userNumber.Length - i - 1])
 				{
-					Console.WriteLine("Number isn't palindrome.");
+					checkPalindrom = false;
 					break;
 				}
-				else
-				{
-					Console.WriteLine("Number is Palindrome.");// TODO: must show ones;
-				}
+				
 			}
-			Console.Read();
+			return checkPalindrom;
 		}
 		//// http://bigocheatsheet.com/
 		//public static bool isPalindrome(string strToCheck)
