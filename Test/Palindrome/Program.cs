@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using Palindrome.Properties;
 
 namespace Palindrome
 {
@@ -71,7 +73,6 @@ namespace Palindrome
 		}
 		static bool IsPalindome(string verifyPalindrome)
 		{
-			
 			bool checkPalindrom = true;
 			for (int i = 0;i < verifyPalindrome.Length / 2;i++)
 			{
@@ -98,21 +99,34 @@ namespace Palindrome
 				Console.WriteLine("Number isn't palindrome.");
 			}
 			Console.Read();
-			
-		}
-		//// http://bigocheatsheet.com/
-		//public static bool isPalindrome(string strToCheck)
-		//{
-		//    for (int i = 0; i < strToCheck.Length / 2 ; i++)
-		//    {
-		//        int lastOffset = strToCheck.Length - 1 - i;
-		//        if(strToCheck[i] != strToCheck[lastOffset])
-		//        {
-		//            return false;
-		//        }
-		//    }
+	    }
 
-		//    return true;
-		//}
-	}
+	    public static void GetResources()
+	    {
+            /*1. Resources
+            / 2. Add file with a lot of string/words/nums  (.txt)
+            / 3. Resources.PT_PracticeWaysMINDMAP
+            / 4. Check for palindromes by two different methods 
+            / 5. Compare execution time of that methods. // Stopwatch
+            / 6. Filter all palindromes to new file.
+            */
+            //TODO: https://www.youtube.com/watch?v=ro_4Otm43UE
+
+
+        }
+        //// http://bigocheatsheet.com/
+        //public static bool isPalindrome(string strToCheck)
+        //{
+        //    for (int i = 0; i < strToCheck.Length / 2 ; i++)
+        //    {
+        //        int lastOffset = strToCheck.Length - 1 - i;
+        //        if(strToCheck[i] != strToCheck[lastOffset])
+        //        {
+        //            return false;
+        //        }
+        //    }
+
+        //    return true;
+        //}
+    }
 }
