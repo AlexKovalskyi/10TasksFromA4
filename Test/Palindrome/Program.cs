@@ -13,8 +13,6 @@ namespace Palindrome
 			Console.ReadLine();
 		}
         //TODO: Implement again in other way with O(n) complicity. Big O
-
-        //TODO: Implement again with while statement.
 		private static void PalindromWithNueric()
 		{
 			Console.Write("Please enter your number: ");
@@ -71,22 +69,27 @@ namespace Palindrome
 			}
 			Console.ReadLine();
 		}
+		static bool IsPalindome(string verifyPalindrome)
+		{
+			
+			bool checkPalindrom = true;
+			for (int i = 0;i < verifyPalindrome.Length / 2;i++)
+			{
+				if (verifyPalindrome[i] != verifyPalindrome[verifyPalindrome.Length - i - 1])
+				{
+					checkPalindrom = false;
+					break;
+				}
+
+			}
+			return checkPalindrom;
+		}
 		
 		static void PalindromWith1For()
 		{
 			Console.Write("Please enter your number: ");
 			string userNumber = Console.ReadLine();
-			bool checkPalindrom = true;
-			for (int i = 0; i<userNumber.Length/2; i++)
-			{
-				if (userNumber[i] != userNumber[userNumber.Length - i - 1])
-				{
-					checkPalindrom = false;
-					break;
-				}
-				
-			}
-			if (checkPalindrom)
+			if (IsPalindome(userNumber))
 			{
 				Console.WriteLine("Number is Palindrome.");
 			}
