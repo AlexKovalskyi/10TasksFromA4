@@ -8,7 +8,7 @@ namespace Palindrome
 		static void Main(string[] args)
 		{
 			PalindromWith1For();
-			//PalindromWithNueric();
+		//	PalindromWithNueric();
 		//	PalindromWith2For();
 			Console.ReadLine();
 		}
@@ -71,21 +71,8 @@ namespace Palindrome
 			}
 			Console.ReadLine();
 		}
-
-
+		
 		static void PalindromWith1For()
-		{	
-			if (CheckPalindrom)
-			{
-				Console.WriteLine("Number is Palindrome.");
-			}
-			else
-			{
-				Console.WriteLine("Number isn't palindrome.");
-			}
-			Console.Read();
-		}
-		static bool CheckPalindrom()
 		{
 			Console.Write("Please enter your number: ");
 			string userNumber = Console.ReadLine();
@@ -99,7 +86,16 @@ namespace Palindrome
 				}
 				
 			}
-			return checkPalindrom;
+			if (checkPalindrom)
+			{
+				Console.WriteLine("Number is Palindrome.");
+			}
+			else
+			{
+				Console.WriteLine("Number isn't palindrome.");
+			}
+			Console.Read();
+			
 		}
 		//// http://bigocheatsheet.com/
 		//public static bool isPalindrome(string strToCheck)
