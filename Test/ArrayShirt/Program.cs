@@ -26,8 +26,8 @@ namespace ArrayInversion
 			{
 				int temp;
 				temp = array[0, i];
-				array[0, i] = array[arrayRols-1, i];
-				array[arrayRols-1, i] = temp;
+				array[0, i] = array[arrayRols - 1, i];
+				array[arrayRols - 1, i] = temp;
 			}
 			Console.WriteLine();
 

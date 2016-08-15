@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-Reverse", "Reverse\6-Reve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2ArrayInversion", "ArrayShirt\8.2ArrayInversion.csproj", "{F419129A-CD8F-4F09-9301-FA0623BADBA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeInText", "PalindromeInText\PalindromeInText.csproj", "{0C94A097-1AD7-4AB7-A497-CA824492605C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C94A097-1AD7-4AB7-A497-CA824492605C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C94A097-1AD7-4AB7-A497-CA824492605C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C94A097-1AD7-4AB7-A497-CA824492605C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C94A097-1AD7-4AB7-A497-CA824492605C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -111,22 +111,7 @@ namespace Palindrome
             / 6. Filter all palindromes to new file.
             */
             //TODO: https://www.youtube.com/watch?v=ro_4Otm43UE
-
-
+			
         }
-        //// http://bigocheatsheet.com/
-        //public static bool isPalindrome(string strToCheck)
-        //{
-        //    for (int i = 0; i < strToCheck.Length / 2 ; i++)
-        //    {
-        //        int lastOffset = strToCheck.Length - 1 - i;
-        //        if(strToCheck[i] != strToCheck[lastOffset])
-        //        {
-        //            return false;
-        //        }
-        //    }
-
-        //    return true;
-        //}
     }
 }

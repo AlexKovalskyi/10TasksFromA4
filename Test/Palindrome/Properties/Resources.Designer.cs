@@ -59,15 +59,5 @@ namespace Palindrome.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] PT_PracticeWaysMINDMAP {
-            get {
-                object obj = ResourceManager.GetObject("PT_PracticeWaysMINDMAP", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }
