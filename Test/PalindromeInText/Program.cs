@@ -11,23 +11,28 @@ namespace PalindromeInText
 	{
 		static void Main(string[] args)
 		{
-			Stopwatch stopwatch = new Stopwatch();
-			stopwatch.Start();
-			PalindromeWith1For palindromeWith1For = new PalindromeWith1For();
-			stopwatch.Stop();
-			Console.WriteLine("Time Elapsed: {0}", stopwatch.Elapsed);
-			stopwatch.Reset();
-			Console.ReadLine();
-
-
-			stopwatch.Start();
-			PalindromeWith2For palindromeWith2For = new PalindromeWith2For();
-			palindromeWith2For.PalindromWith2For();
-			stopwatch.Stop();
-			Console.WriteLine("Time Elapsed: {0}", stopwatch.Elapsed);
-			Console.ReadLine();
+            
 		}
 
 
+        //TODO: Remove
+        public static void OldCode()
+        {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            PalindromeN palindromeWith1For = new PalindromeN();
+            stopwatch.Stop();
+            Console.WriteLine("Time Elapsed: {0}", stopwatch.Elapsed);
+            stopwatch.Reset();
+            Console.ReadLine();
+
+
+            stopwatch.Start();
+            PalindromeN2 palindromeWith2For = new PalindromeN2();
+            palindromeWith2For.PalindromWith2For();
+            stopwatch.Stop();
+            Console.WriteLine("Time Elapsed: {0}", stopwatch.Elapsed);
+            Console.ReadLine();
+        }
 	}
 }

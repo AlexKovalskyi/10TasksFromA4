@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C94A097-1AD7-4AB7-A497-CA824492605C}</ProjectGuid>
+    <ProjectGuid>{AA6A6B7E-BA01-4266-BFF4-59974ECC5FF5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PalindromeInText</RootNamespace>
-    <AssemblyName>PalindromeInText</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>FunWithInterfaces</RootNamespace>
+    <AssemblyName>FunWithInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -43,33 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\IPalindrome.cs" />
-    <Compile Include="PalindromeTester.cs" />
-    <Compile Include="PalindromeN.cs" />
-    <Compile Include="PalindromeN2.cs" />
+    <Compile Include="Interfaces\IApi.cs" />
+    <Compile Include="Interfaces\IVideoAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <Compile Include="Interfaces\IAudionAdapter.cs" />
+    <Compile Include="System\Core\Image.cs" />
+    <Compile Include="System\Core\Windows.cs" />
+    <Compile Include="System\IFullInterface.cs" />
+    <Compile Include="System\Modules\FractalDesignCooler.cs" />
+    <Compile Include="System\Modules\MSIVideoAdapter.cs" />
+    <Compile Include="System\Modules\PioneerAudioAdapter.cs" />
+    <Compile Include="System\Modules\RealtekAudioAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Baba-jaga_Bessmertnaja.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\large.txt" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
