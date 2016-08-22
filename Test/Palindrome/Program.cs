@@ -10,11 +10,8 @@ namespace Palindrome
 		static void Main(string[] args)
 		{
 			PalindromWith1For();
-		//	PalindromWithNueric();
-		//	PalindromWith2For();
 			Console.ReadLine();
 		}
-        //TODO: Implement again in other way with O(n) complicity. Big O
 		private static void PalindromWithNueric()
 		{
 			Console.Write("Please enter your number: ");
@@ -100,18 +97,5 @@ namespace Palindrome
 			}
 			Console.Read();
 	    }
-
-	    public static void GetResources()
-	    {
-            /*1. Resources
-            / 2. Add file with a lot of string/words/nums  (.txt)
-            / 3. Resources.PT_PracticeWaysMINDMAP
-            / 4. Check for palindromes by two different methods 
-            / 5. Compare execution time of that methods. // Stopwatch
-            / 6. Filter all palindromes to new file.
-            */
-            //TODO: https://www.youtube.com/watch?v=ro_4Otm43UE
-			
-        }
     }
 }
