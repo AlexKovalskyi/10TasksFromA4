@@ -11,30 +11,32 @@ namespace ArrayInversion
 		static void Main(string[] args)
 		{
 
+			
 			int[,] array = new int[arrayRols, arrayColumn] { { 4, 5, 6, 7 },
 															 { 1, 2, 4, 1 },
 															 { 4, 3, 6, 8 } };
-			//Print array
 			Console.WriteLine("Our Array:");
 			Print2DArrays(array);
-			//Array inversion
-			int step = 1;
+			Console.Write("Please enter count of array shirt: ");
+			int countArrayShitr = Convert.ToInt32(Console.ReadLine());
 			int newColum ;
 			int newRols ;
 			Console.WriteLine();
 			Console.WriteLine("Araay after inversion:");
+			int[,] shirtArray = new int[arrayRols, arrayColumn];
 			for (int i = 0;i < arrayRols;i++)
 			{
 				for (int j = 0;j < arrayColumn;j++)
 				{
-					newColum = (i + (step % arrayColumn)) % arrayRols;
+					newColum = (i + (countArrayShitr % arrayColumn)) % arrayRols;
 					newRols = j % arrayColumn;
-					Console.Write("\t" + array[newColum, newRols]);
-					
+					shirtArray[i, j] = array[newColum, newRols];
 				}
 				Console.WriteLine();
 			}
 			Console.WriteLine();
+
+			Print2DArrays(shirtArray);
 			
 			Console.ReadLine();
 		}
