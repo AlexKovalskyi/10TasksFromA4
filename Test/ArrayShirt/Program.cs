@@ -1,50 +1,45 @@
 ﻿using System;
 
-namespace ArrayInversion
+namespace ArrayShifting
 {
 	class Program
 	{
+		private const int ArrROWS = 3;
+		private const int ArrCOLS = 4;
 
-		public const int arrayRols = 3;
-		const int arrayColumn = 4;
-
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
-
-			
-			int[,] array = new int[arrayRols, arrayColumn] { { 4, 5, 6, 7 },
-															 { 1, 2, 4, 1 },
-															 { 4, 3, 6, 8 } };
-			Console.WriteLine("Our Array:");
+			int[,] array = new int[ArrROWS, ArrCOLS] { { 4, 5, 6, 7 },
+													   { 1, 2, 4, 1 },
+													   { 4, 3, 6, 8 } };
+			Console.WriteLine("Initial array:");
 			Print2DArray(array);
-			Console.Write("Please enter count of array shirt: ");
-			int countArrayShitr = Convert.ToInt32(Console.ReadLine());
-			int newColum ;
-			int newRols ;
-			Console.WriteLine();
-			Console.WriteLine("Araay after inversion:");
-			int[,] shirtArray = new int[arrayRols, arrayColumn];
-			for (int i = 0;i < arrayRols;i++)
-			{
-				for (int j = 0;j < arrayColumn;j++)
-				{
-					newColum = (i + (countArrayShitr % arrayColumn)) % arrayRols;
-					newRols = j % arrayColumn;
-					shirtArray[i, j] = array[newColum, newRols];
-				}
-				Console.WriteLine();
-			}
-			Console.WriteLine();
 
-			Print2DArray(shirtArray);
+			Console.Write("Please enter count of array shifting: ");
+			int countArrayShift = Convert.ToInt32(Console.ReadLine());
+			int[,] shiftedArr = new int[ArrROWS, ArrCOLS];
+            int newColum, newRols;
+            for (int i = 0; i < ArrROWS; i++)
+			{
+				for (int j = 0; j < ArrCOLS; j++)
+				{
+					newColum = (i + (countArrayShift % ArrCOLS)) % ArrROWS;
+					newRols = j % ArrCOLS;
+					shiftedArr[i, j] = array[newColum, newRols];
+				}
+			}
+
+            Console.WriteLine("Array after shifting:");
+            Print2DArray(shiftedArr);
 			
 			Console.ReadLine();
 		}
-		static void Print2DArray(int[,] arr)
+
+		private static void Print2DArray(int[,] arr)
 		{
-			for (int i = 0;i < arrayRols;i++)
+			for (int i = 0; i < ArrROWS; i++)
 			{
-				for (int j = 0;j < arrayColumn;j++)
+				for (int j = 0; j < ArrCOLS; j++)
 				{
 					Console.Write("\t" + arr[i, j]);
 				}
