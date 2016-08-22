@@ -16,7 +16,7 @@ namespace ArrayInversion
 															 { 1, 2, 4, 1 },
 															 { 4, 3, 6, 8 } };
 			Console.WriteLine("Our Array:");
-			Print2DArrays(array);
+			Print2DArray(array);
 			Console.Write("Please enter count of array shirt: ");
 			int countArrayShitr = Convert.ToInt32(Console.ReadLine());
 			int newColum ;
@@ -36,11 +36,11 @@ namespace ArrayInversion
 			}
 			Console.WriteLine();
 
-			Print2DArrays(shirtArray);
+			Print2DArray(shirtArray);
 			
 			Console.ReadLine();
 		}
-		static void Print2DArrays(int[,] arr)
+		static void Print2DArray(int[,] arr)
 		{
 			for (int i = 0;i < arrayRols;i++)
 			{
