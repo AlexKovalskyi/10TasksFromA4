@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LargerNeighbor
 {
@@ -10,19 +6,22 @@ namespace LargerNeighbor
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Enter sequence of number:");
+			Console.WriteLine("Enter sequence of number (last number must be '0'):");
 			string sequence = Console.ReadLine();
-			sequence.ToArray();
-			Console.WriteLine("Large Number from neighbor:");
-			for (int i = 0;i < sequence.Length;i++)
+			string[] arrNumbers = sequence.Split(' ');
+			int[] number = new int[arrNumbers.Length];
+			for (int i = 0;i < arrNumbers.Length - 1;i++)
 			{
-				if ( i+2 == sequence.Length)
+				number[i] = Convert.ToInt32(arrNumbers[i]);
+			}
+			Console.WriteLine("Large Number from neighbor:");
+			for (int pos = 1;pos < number.Length - 1;pos++)
+			{
+				int next = pos + 1;
+				int prev = pos - 1;
+				if (number[prev] < number[pos] && number[pos] > number[next])
 				{
-					break;
-				}
-				if (sequence[i] < sequence[i + 1] && sequence[i+1] > sequence[i + 2])
-				{
-					Console.WriteLine(sequence[i + 1]);
+					Console.WriteLine(number[pos]);
 				}
 			}
 			Console.ReadLine();
