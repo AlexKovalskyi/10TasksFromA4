@@ -18,13 +18,12 @@ namespace ArrayShifting
 			Console.Write("Please enter count of array shifting: ");
 			int countArrayShift = Convert.ToInt32(Console.ReadLine());
 			int[,] shiftedArr = new int[ArrROWS, ArrCOLS];
-            int newColum, newRols;
             for (int i = 0; i < ArrROWS; i++)
 			{
 				for (int j = 0; j < ArrCOLS; j++)
 				{
-					newColum = (i + (countArrayShift % ArrCOLS)) % ArrROWS;
-					newRols = j % ArrCOLS;
+					int newColum = (i + (countArrayShift % ArrCOLS)) % ArrROWS;
+					int newRols = j % ArrCOLS;
 					shiftedArr[i, j] = array[newColum, newRols];
 				}
 			}
