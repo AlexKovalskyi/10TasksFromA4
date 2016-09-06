@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-ChessBoard", "Test\1-ChessBoard.csproj", "{1A1E5D49-81EF-463B-AB59-71B33D09B7CB}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-Reverse", "Reverse\6-Reverse.csproj", "{0BA1C766-3D30-4616-A81D-1B83FF38FEB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2-ArrayShifting", "ArrayShirt\8.2-ArrayShifting.csproj", "{F419129A-CD8F-4F09-9301-FA0623BADBA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-LargerNeighbor", "7-LargerNeighbor\7-LargerNeighbor.csproj", "{71C80075-785B-4A63-B393-F9D7925BEB11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F419129A-CD8F-4F09-9301-FA0623BADBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C80075-785B-4A63-B393-F9D7925BEB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C80075-785B-4A63-B393-F9D7925BEB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C80075-785B-4A63-B393-F9D7925BEB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C80075-785B-4A63-B393-F9D7925BEB11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
